@@ -51,7 +51,7 @@ while number_letters < len(secret_word) and guesses < 7:
         print("You are on the right track, this letter is in the word!")
         number_letters += 1
         word += letter
-        print(''.join([char if char in word else ' _ ' for char in secret_word]))    
+        print(''.join([char if char in word else ' * ' for char in secret_word]))    
         if number_letters==len(secret_word):
                     print("You win!")
     elif letter is not secret_word: 
