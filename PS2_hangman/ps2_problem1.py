@@ -44,7 +44,7 @@ guesses = 6
 number_letters = 0
 secret_word = choose_word(wordlist)
 word = []
-print(secret_word)
+
 while number_letters < len(secret_word) and guesses > 0:
     letter = input("Enter the letter: ")
     if letter == "":
