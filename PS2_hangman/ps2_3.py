@@ -101,7 +101,7 @@ def hangman(secret_word):
         guess=guess.lower()
         while len(guess) > 1 or not guess.isalpha():
             warnings_remaining, guesses_remaining = warnings_left(warnings_remaining, guesses_remaining)
-            print ("Oops! That is not a valid letter. You have: ",warnings_remaining, 'warnings remaining.')
+            print ("Oops! That is not a valid letter.You can only input a alphabet. You have: ",warnings_remaining, 'warnings remaining.')
             guess=str(input("Please, enter a letter: ")).lower()
             
         if guess not in letters_guessed:
